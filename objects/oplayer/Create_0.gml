@@ -14,6 +14,8 @@ toDefendStart = 25;
 toDefendEnd = 32;
 defendStart = 25;
 defendEnd = 32;
+deathStart = 60;
+deathEnd = 75;
 
 
 

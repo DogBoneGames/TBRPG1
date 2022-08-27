@@ -1,3 +1,5 @@
+//Stat Variables
+
 #macro HEALTH 0
 #macro SKILLPOINTS 1
 #macro SPEED 2
@@ -7,15 +9,21 @@
 #macro ARMOR 6
 #macro WEAPON 7
 
+//State Variables
+
 #macro IDLE 0
 #macro ATTACK 1
 #macro MISS 2
 #macro HURT 3
 #macro TODEFEND 4
 #macro DEFEND 5
+#macro DEATH 6
 
+//Base State
 state = IDLE;
 
+
+//Base Stats DO NOT CHANGE
 base[HEALTH] = 10;
 base[SKILLPOINTS] = 5;
 base[SPEED] = irandom_range(1,10);
@@ -24,6 +32,9 @@ base[DEFENSEPOWER] = 1;
 base[ACCURACY] = 0.5;
 base[ARMOR] = 1;
 base[WEAPON] = 1;
+
+
+//Current stats will change with level and equipment
 
 current[HEALTH] = base[@ HEALTH];
 current[SKILLPOINTS] = base[@ SKILLPOINTS];
@@ -34,10 +45,18 @@ current[ACCURACY] = base[@ACCURACY];
 current[ARMOR] = base[@ARMOR];
 current[WEAPON] = base[@WEAPON];
 
+
+//Combat processing variables
+
 turnFinished = false;
 selected = false;
 attackWillHit = false;
 incomingDamage = 0;
+hpBarWidth = sprite_get_width(uiHP);
+hpBarHeight = sprite_get_height(uiHP);
+
+
+//Damage Processing Function and Variables
 
 function DamageUnit(amount){
 	var damage = amount - current[@DEFENSEPOWER] + current[@ARMOR];
