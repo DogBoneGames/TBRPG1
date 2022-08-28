@@ -1,3 +1,12 @@
+//Viewport Variables (Resolution, Camera Position)
+
+#macro Camera_Width camera_get_view_width(view_camera[0])
+#macro Camera_Height camera_get_view_width(view_camera[0])
+
+#macro Display_ScaleX display_get_gui_width()/Camera_Width
+#macro Display_ScaleY display_get_gui_height()/Camera_Height
+
+
 //Stat Variables
 
 #macro HEALTH 0
@@ -55,6 +64,7 @@ incomingDamage = 0;
 hpBarWidth = sprite_get_width(uiHP);
 hpBarHeight = sprite_get_height(uiHP);
 
+drawTarget = false;
 
 //Damage Processing Function and Variables
 

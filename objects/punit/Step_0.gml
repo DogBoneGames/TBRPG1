@@ -61,3 +61,13 @@ switch(state){
 		}
 	break;
 }
+	
+if ((global.targeting) && global.selectedUnit != id){
+	if (position_meeting(mouse_x,mouse_y,id)){
+		drawTarget = true;	
+	}
+	else{
+		drawTarget = false;	
+	}
+	
+}

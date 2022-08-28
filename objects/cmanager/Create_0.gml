@@ -20,3 +20,5 @@ allowInput = false;
 global.selectedUnit = noone;
 global.units = ds_list_create();
 global.selectedTargets = noone;
+
+global.targeting = false;

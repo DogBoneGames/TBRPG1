@@ -1,16 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "vButton",
+    "path": "sprites/vButton/vButton.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": {
-    "name": "vTargeting",
-    "path": "sprites/vTargeting/vTargeting.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "pUnit",
-    "path": "objects/pUnit/pUnit.yy",
+    "name": "pButton",
+    "path": "objects/pButton/pButton.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,9 +24,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -34,7 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPlayer",
+  "name": "oButtonGeneric",
   "tags": [],
   "resourceType": "GMObject",
 }
