@@ -21,4 +21,8 @@ global.selectedUnit = noone;
 global.units = ds_list_create();
 global.selectedTargets = noone;
 
+global.targets = ds_list_create();
 global.targeting = false;
+
+baseUI = layer_get_id("BaseUI");
+targetUI = layer_get_id("TargetUI");
