@@ -9,12 +9,18 @@ if (event_data[? "event_type"] == "sequence event"){
 		}
 		break;
 		
+		case "UnitDefend":
+			global.selectedUnit.turnFinished = true;
+			selectedFinished = true;
+			processFinished = true;
+		break;
+		
 		//combat processing finish check
 		
 		case "UnitDeath":
 		case "UnitMiss":
 		case "unitHurt":
 			processFinished = true;
-			break;
+		break;
 	}
 }

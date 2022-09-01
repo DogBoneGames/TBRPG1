@@ -1,8 +1,10 @@
 switch(state){
 	case IDLE:
+	if(!defending){
 		if(layer_sequence_get_headpos(unitSequence) > idleEnd){
 			layer_sequence_headpos(unitSequence, idleStart);	
 		}
+	}
 	break;
 	
 	case ATTACK:

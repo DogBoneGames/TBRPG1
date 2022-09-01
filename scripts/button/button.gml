@@ -27,3 +27,16 @@ function CancelButton(){
 		event_user(2);//changes UI back to non-targeting
 	}
 }
+
+function DefendButton(){
+	if (cManager.allowInput){
+		with(global.selectedUnit){
+		state = TODEFEND;
+		layer_sequence_headpos(unitSequence, toDefendStart);
+		}
+	}
+	with(cManager){
+		//event_user(0); //disable input
+		event_user(1);
+	}
+}

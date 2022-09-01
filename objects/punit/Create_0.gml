@@ -65,6 +65,7 @@ hpBarWidth = sprite_get_width(uiHP);
 hpBarHeight = sprite_get_height(uiHP);
 
 drawTarget = false;
+defending = false;
 
 //Damage Processing Function and Variables
 

@@ -6,16 +6,16 @@ idleStart = 0;
 idleEnd = 10;
 attackStart = 12;
 attackEnd = 24;
-missStart = 48;
-missEnd = 58;
-hurtStart = 33;
-hurtEnd = 47;
-toDefendStart = 25;
-toDefendEnd = 32;
-defendStart = 25;
-defendEnd = 32;
-deathStart = 60;
-deathEnd = 75;
+missStart = 61;
+missEnd = 71;
+hurtStart = 46;
+hurtEnd = 59;
+toDefendStart = 26;
+toDefendEnd = 36;
+defendStart = 38;
+defendEnd = 44;
+deathStart = 73;
+deathEnd = 87;
 
 
 

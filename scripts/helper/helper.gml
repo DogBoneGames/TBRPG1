@@ -27,9 +27,20 @@ function UnitAttack(){
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
 		with(global.selectedTargets){
+			
+			if (defending){
+				defending = false;	
+			}
+			
 			incomingDamage = unit.current[@ ATTACKPOWER]+ current[@ WEAPON];
 			state = HURT;
 			layer_sequence_headpos(unitSequence, hurtStart);
 		}
+	}
+}
+
+function UnitDefend(){
+	with(global.selectedUnit){
+		defending = true;	
 	}
 }
