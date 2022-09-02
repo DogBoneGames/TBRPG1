@@ -4,6 +4,9 @@ switch(combatPhase){
 		layer_set_visible(targetUI, false);
 		instance_deactivate_layer(targetUI);
 		layer_set_visible(baseUI, false);
+		
+		layer_set_visible(skillsUI, false);
+		instance_deactivate_layer(skillsUI);
 	
 	//create all units for combat
 		for (var i = 0; i < instance_number(cSpawn); i++){
@@ -92,6 +95,9 @@ switch(combatPhase){
 			global.selectedTargets = noone;
 
 			ds_list_clear(global.targets);
+			
+			global.skillTargeting = false;
+			ds_list_clear(global.selectedTargets);
 			
 			combatPhase = phase.startTurn;
 	break;

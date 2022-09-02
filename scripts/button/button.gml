@@ -40,3 +40,11 @@ function DefendButton(){
 		event_user(1);
 	}
 }
+
+function SkillMenu(){
+	//TODO: fill in	
+}
+
+function SkillButton(){
+	//TODO: fill in	
+}

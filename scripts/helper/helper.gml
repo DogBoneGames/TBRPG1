@@ -44,3 +44,15 @@ function UnitDefend(){
 		defending = true;	
 	}
 }
+
+function UnitSkill(){
+	//TODO: FILL IN	
+}
+
+function singleTargetAttack(_unit){
+	//TODO: FILL IN	
+}
+
+function multiTargetAttack(){
+	//TODO
+}

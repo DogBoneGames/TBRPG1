@@ -22,5 +22,10 @@ if (event_data[? "event_type"] == "sequence event"){
 		case "unitHurt":
 			processFinished = true;
 		break;
+		
+		case "SkillSent":
+			selectedFinished = true;
+			skillSent = false;
+		break;
 	}
 }
