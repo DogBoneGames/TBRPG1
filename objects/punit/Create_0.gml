@@ -27,6 +27,7 @@
 #macro TODEFEND 4
 #macro DEFEND 5
 #macro DEATH 6
+#macro SKILL 7
 
 //Base State
 state = IDLE;
@@ -66,6 +67,21 @@ hpBarHeight = sprite_get_height(uiHP);
 
 drawTarget = false;
 defending = false;
+
+
+
+function UseSkillPoints(amount){
+	current[SKILLPOINTS] -= amount;	
+}
+learnedSkill[0] = -1;
+learnedSkill[1] = -1;
+selectedSkill = -1;
+
+
+
+
+
+
 
 //Damage Processing Function and Variables
 

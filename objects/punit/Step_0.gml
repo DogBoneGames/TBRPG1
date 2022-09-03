@@ -62,6 +62,22 @@ switch(state){
 			instance_destroy();
 		}
 	break;
+	case SKILL:
+		if (layer_sequence_get_headpos(unitSequence) > skillEnd){
+			UseSkillPoints(selectedSkill.cost);
+			turnFinished = true;
+			if (attackWillHit){
+				//turnFinished = true;
+				layer_sequence_headpos(unitSequence, idleStart);
+				state = IDLE;
+			}else{
+				//turnFinished = true;
+				layer_sequence_headpos(unitSequence, missStart);
+				state = MISS;
+			}
+			selectedSkill = -1;
+		}
+	break;
 }
 	
 if ((global.targeting) && global.selectedUnit != id){
