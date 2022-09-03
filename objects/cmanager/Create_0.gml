@@ -30,5 +30,5 @@ targetUI = layer_get_id("TargetUI");
 global.skillsButtons = ds_list_create();
 global.skillTargeting = false;
 skillSent = false;
-instance_create_depth(0,0,0, cSkills); //TODO: Create a cSkills object
-skillsUI = layer_get_id("SkillsMenu");
+instance_create_depth(0,0,0, cSkills);
+skillsUI = layer_get_id("SkillsUI");

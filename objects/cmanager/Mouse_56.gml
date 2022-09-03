@@ -27,6 +27,7 @@ if (global.targeting){
 			ds_list_add(global.selectedTargets, unit);
 		}
 	}
+}
 
 
 if (global.skillTargeting){
@@ -44,7 +45,7 @@ if (global.skillTargeting){
 		//}
 	}
 }
-}
+
 
 
 

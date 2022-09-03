@@ -80,7 +80,7 @@ switch(state){
 	break;
 }
 	
-if ((global.targeting) && global.selectedUnit != id){
+if ((global.targeting||global.skillTargeting) && global.selectedUnit != id){
 	if (position_meeting(mouse_x,mouse_y,id)){
 		drawTarget = true;	
 	}

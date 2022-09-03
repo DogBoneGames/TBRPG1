@@ -92,7 +92,7 @@ switch(combatPhase){
 	
 	case phase.endTurn:
 			selectedFinished = false;
-			global.selectedTargets = noone;
+			//global.selectedTargets = noone;
 
 			ds_list_clear(global.targets);
 			

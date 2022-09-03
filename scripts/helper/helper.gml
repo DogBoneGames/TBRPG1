@@ -46,13 +46,29 @@ function UnitDefend(){
 }
 
 function UnitSkill(){
-	//TODO: FILL IN	
+	show_debug_message("unitskill function working!");
+	if (global.selectedUnit.attackWillHit && !cManager.skillSent){
+		show_debug_message("ok, skill sent")
+		cManager.skillSent = true;
+		for(var i = 0; i < ds_list_size(global.selectedTargets); i++){
+			with(global.selectedTargets[|i]){
+				if (defending){
+					defending = false;
+				}
+				incomingDamage = global.selectedUnit.selectedSkill.healthChange;
+				state = HURT;
+				layer_sequence_headpos(unitSequence, hurtStart);
+			}
+		}
+	}
 }
 
 function singleTargetAttack(_unit){
-	//TODO: FILL IN	
+	show_debug_message("skill is working");
+	ds_list_add(global.selectedTargets, _unit);
 }
 
 function multiTargetAttack(){
-	//TODO
+	show_debug_message("skill is working");
+	ds_list_copy(global.selectedTargets, global.targets);
 }

@@ -27,4 +27,4 @@ skillStart = 89;
 skillEnd = 101;
 
 learnedSkill[0] = global.skill[skill.slash];
-learnedSkill[1] = global.skill[skill.multiSlash];
+learnedSkill[1] = global.skill[skill.multislash];
