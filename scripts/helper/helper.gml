@@ -26,7 +26,8 @@ function CheckForHit(){
 function UnitAttack(){
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
-		with(global.selectedTargets){
+		for (var i = 0; i < ds_list_size(global.selectedTargets); i++){
+		with(global.selectedTargets[|i]){
 			
 			if (defending){
 				defending = false;	
@@ -36,6 +37,7 @@ function UnitAttack(){
 			state = HURT;
 			layer_sequence_headpos(unitSequence, hurtStart);
 		}
+	}
 	}
 }
 
@@ -71,4 +73,21 @@ function singleTargetAttack(_unit){
 function multiTargetAttack(){
 	show_debug_message("skill is working");
 	ds_list_copy(global.selectedTargets, global.targets);
+}
+
+function AIChoose(){
+	for (var i = 0; i < ds_list_size(global.units); i++){
+		var _inst = global.units[| i];
+		if (_inst.team != global.selectedUnit.team){
+			ds_list_add(global.targets, _inst);
+		}
+	}
+	var _unit = global.targets[| irandom(1)];
+	ds_list_clear(global.selectedTargets);
+	with (global.selectedUnit){
+		state = ATTACK;
+		layer_sequence_headpos(unitSequence, attackStart);
+	}
+	ds_list_add(global.selectedTargets, _unit);
+	cManager.aiDone = true;
 }

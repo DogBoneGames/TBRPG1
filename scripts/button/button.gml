@@ -3,7 +3,7 @@ function AttackButton(){
 	//runs through the list of units, excludes self targetting
 	for (var i = 0; i < ds_list_size(global.units); i++){
 		var _inst = global.units[|i];
-		if (_inst != global.selectedUnit){
+		if (_inst.team != global.selectedUnit.team){
 	//adds all of the non-self units to list of potential targets
 			ds_list_add(global.targets,_inst);
 		}
@@ -66,7 +66,7 @@ function SkillButton(){
 		for (var i = 0; i < ds_list_size(global.units); i++){
 			show_debug_message("for loop working");
 			var _inst = global.units[| i];
-			if (_inst != global.selectedUnit){
+			if (_inst.team!= global.selectedUnit.team){
 				ds_list_add(global.targets, _inst);
 			}
 		}

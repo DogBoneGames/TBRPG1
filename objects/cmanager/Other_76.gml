@@ -18,8 +18,9 @@ if (event_data[? "event_type"] == "sequence event"){
 		//combat processing finish check
 		
 		case "UnitDeath":
+			global.processUnitDeath = true;
+		break;
 		case "UnitMiss":
-		case "unitHurt":
 			processFinished = true;
 		break;
 		

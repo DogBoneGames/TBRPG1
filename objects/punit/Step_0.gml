@@ -32,13 +32,14 @@ switch(state){
 			DamageUnit(incomingDamage);
 			if (current[@HEALTH] > 0)
 			{
+				cManager.processFinished = true;
 				layer_sequence_headpos(unitSequence, idleStart);
 				incomingDamage = 0;
 				state = IDLE;
 			}
 			else{
 				layer_sequence_headpos(unitSequence, deathStart);
-				ds_list_delete(global.units,ds_list_find_index(global.units,id))
+				//ds_list_delete(global.units,ds_list_find_index(global.units,id))
 				state = DEATH;
 			}
 		}
@@ -80,8 +81,8 @@ switch(state){
 	break;
 }
 	
-if ((global.targeting||global.skillTargeting) && global.selectedUnit != id){
-	if (position_meeting(mouse_x,mouse_y,id)){
+if ((global.targeting||global.skillTargeting) && global.selectedUnit != noone){
+	if (position_meeting(mouse_x,mouse_y,id) && team != global.selectedUnit.team){
 		drawTarget = true;	
 	}
 	else{
