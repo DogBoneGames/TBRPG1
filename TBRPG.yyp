@@ -10,6 +10,7 @@
     {"id":{"name":"sPlayerBattle_PlaceholderMiss","path":"sprites/sPlayerBattle_PlaceholderMiss/sPlayerBattle_PlaceholderMiss.yy",},"order":9,},
     {"id":{"name":"sPlayerBattle_Wicks_Placeholder","path":"sprites/sPlayerBattle_Wicks_Placeholder/sPlayerBattle_Wicks_Placeholder.yy",},"order":4,},
     {"id":{"name":"vTargeting","path":"sprites/vTargeting/vTargeting.yy",},"order":13,},
+    {"id":{"name":"rmGameOver","path":"rooms/rmGameOver/rmGameOver.yy",},"order":2,},
     {"id":{"name":"sPlayerBattle_PlaceholderDeath","path":"sprites/sPlayerBattle_PlaceholderDeath/sPlayerBattle_PlaceholderDeath.yy",},"order":7,},
     {"id":{"name":"vIndicator","path":"sprites/vIndicator/vIndicator.yy",},"order":8,},
     {"id":{"name":"sPlayerBattle_PlaceholderAttack","path":"sprites/sPlayerBattle_PlaceholderAttack/sPlayerBattle_PlaceholderAttack.yy",},"order":5,},
@@ -21,6 +22,7 @@
     {"id":{"name":"oPlayer_overworld","path":"objects/oPlayer_overworld/oPlayer_overworld.yy",},"order":0,},
     {"id":{"name":"rmOverworld1","path":"rooms/rmOverworld1/rmOverworld1.yy",},"order":1,},
     {"id":{"name":"owController","path":"objects/owController/owController.yy",},"order":9,},
+    {"id":{"name":"debugButton","path":"objects/debugButton/debugButton.yy",},"order":11,},
     {"id":{"name":"cManager","path":"objects/cManager/cManager.yy",},"order":1,},
     {"id":{"name":"Button","path":"scripts/Button/Button.yy",},"order":3,},
     {"id":{"name":"oButtonGeneric","path":"objects/oButtonGeneric/oButtonGeneric.yy",},"order":6,},
@@ -51,6 +53,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rmOverworld1","path":"rooms/rmOverworld1/rmOverworld1.yy",},},
     {"roomId":{"name":"rmBattle","path":"rooms/rmBattle/rmBattle.yy",},},
+    {"roomId":{"name":"rmGameOver","path":"rooms/rmGameOver/rmGameOver.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
