@@ -1,3 +1,4 @@
+
 switch(combatPhase){
 	case phase.init: 
 	//avoid ui bugs
@@ -26,6 +27,7 @@ switch(combatPhase){
 	
 	case phase.startTurn:
 	//round up all units in battle
+		if !instance_exists(objText){
 			for (var i = 0; i < instance_number(pUnit); i++){
 				var _inst = instance_find(pUnit, i);
 				ds_list_add(global.units, _inst);
@@ -61,9 +63,11 @@ switch(combatPhase){
 				event_user(1);
 			}
 			combatPhase = phase.wait;
+		}
 	break;
 	
 	case phase.wait:
+	if !instance_exists(objText){
 	
 		if (global.selectedUnit.team > 0 && !aiDone){
 			AIChoose();	
@@ -81,9 +85,11 @@ switch(combatPhase){
 			layer_set_visible(baseUI, false);
 			instance_deactivate_layer(targetUI);
 		}
+	}
 	break;
 	
 	case phase.process:
+	if !instance_exists(objText){
 		allies = 0;
 		enemies = 0;
 		if (!global.processUnitDeath){
@@ -99,9 +105,11 @@ switch(combatPhase){
 				combatPhase = phase.checkFinish;
 			}
 		}
+	}
 	break;
 	
 	case phase.checkFinish:
+		if !instance_exists(objText){
 			processFinished = false;
 			for (var i = 0; i < ds_list_size(global.units); i++){
 				var _unit = global.units[| i];
@@ -120,6 +128,7 @@ switch(combatPhase){
 			else {
 				combatPhase = phase.endTurn;
 			}
+		}
 			
 			
 			
@@ -132,6 +141,7 @@ switch(combatPhase){
 	break;
 	
 	case phase.endTurn:
+		if !instance_exists(objText){
 			//processFinished = false;
 			selectedFinished = false;
 			//global.selectedTargets = noone;
@@ -145,19 +155,24 @@ switch(combatPhase){
 			aiDone = false;
 			
 			combatPhase = phase.startTurn;
+		}
 	break;
 	
 	case phase.win:
+	if !instance_exists(objText){
 		
 		show_message("You win!");
 		room_goto_previous();
+	}
 	
 	break;
 	
 	case phase.lose:
+	if !instance_exists(objText){
 		
 		show_message("You lose!");
 		room_goto(rmGameOver);
+	}
 	
 	break;
 }

@@ -4,7 +4,7 @@ if (char_current < _len) {
 } else {
 	text_current += 1;
 	if (text_current > text_last){
-		room_restart(); ///change it later
+		instance_destroy();
 	} else {
 		text[text_current] = sc_Dialog(text[text_current], text_width);
 		char_current = 0;

@@ -91,3 +91,7 @@ function AIChoose(){
 	ds_list_add(global.selectedTargets, _unit);
 	cManager.aiDone = true;
 }
+
+function spawnText(){
+	
+}

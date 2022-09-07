@@ -46,14 +46,6 @@
             {"propertyId":{"name":"Label","path":"objects/pButton/pButton.yy",},"objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"value":"Skill","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"MainFunc","path":"objects/pButton/pButton.yy",},"objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"value":"SkillMenu","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oButtonGeneric","path":"objects/oButtonGeneric/oButtonGeneric.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":576.0,"resourceVersion":"1.0","name":"inst_6C7B5F0","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"Label","path":"objects/pButton/pButton.yy",},"objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"value":"Debug: Win Battle","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"MainFunc","path":"objects/pButton/pButton.yy",},"objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"value":"DebugWin","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"oButtonGeneric","path":"objects/oButtonGeneric/oButtonGeneric.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":224.0,"resourceVersion":"1.0","name":"inst_2D52EF7F","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"Label","path":"objects/pButton/pButton.yy",},"objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"value":"Debug Lose","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"MainFunc","path":"objects/pButton/pButton.yy",},"objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"value":"DebugLose","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"oButtonGeneric","path":"objects/oButtonGeneric/oButtonGeneric.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":288.0,"resourceVersion":"1.0","name":"inst_7E54BD3F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"BaseUI","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Sequences","tags":[],"resourceType":"GMRAssetLayer",},
     {"instances":[
@@ -81,8 +73,6 @@
     {"name":"inst_5109F8FC","path":"rooms/rmBattle/rmBattle.yy",},
     {"name":"inst_A7DC8E1","path":"rooms/rmBattle/rmBattle.yy",},
     {"name":"inst_6C7B5F0","path":"rooms/rmBattle/rmBattle.yy",},
-    {"name":"inst_2D52EF7F","path":"rooms/rmBattle/rmBattle.yy",},
-    {"name":"inst_7E54BD3F","path":"rooms/rmBattle/rmBattle.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

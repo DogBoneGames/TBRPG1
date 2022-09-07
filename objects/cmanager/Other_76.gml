@@ -3,7 +3,11 @@
 if (event_data[? "event_type"] == "sequence event"){
 	switch(event_data[? "message"]){
 		case "AttackSent":
-		show_message((string(global.selectedUnit))+" attacks!");
+		instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
+		{
+			text_last : 0,
+			combatText : (string(global.selectedUnit))+" attacks!"
+		});
 		selectedFinished = true;
 		if (!global.selectedUnit.attackWillHit){
 			processFinished = true;	
@@ -11,7 +15,11 @@ if (event_data[? "event_type"] == "sequence event"){
 		break;
 		
 		case "UnitDefend":
-			show_message((string(global.selectedUnit))+" defends!");
+		instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
+		{
+			text_last : 0,
+			combatText : (string(global.selectedUnit))+" defends!"
+		});
 			global.selectedUnit.turnFinished = true;
 			selectedFinished = true;
 			processFinished = true;
@@ -23,12 +31,20 @@ if (event_data[? "event_type"] == "sequence event"){
 			global.processUnitDeath = true;
 		break;
 		case "UnitMiss":
-			show_message(string(global.selectedUnit)+" missed!");
+		instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
+		{
+			text_last : 0,
+			combatText : (string(global.selectedUnit))+" missed!"
+		});
 			processFinished = true;
 		break;
 		
 		case "SkillSent":
-			show_message(string(global.selectedUnit)+" uses "+string(global.selectedUnit.selectedSkill.name));
+				instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
+		{
+			text_last : 0,
+			combatText : (string(global.selectedUnit)+" uses "+string(global.selectedUnit.selectedSkill.name))
+		});
 			selectedFinished = true;
 			skillSent = false;
 		break;

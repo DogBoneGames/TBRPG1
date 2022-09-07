@@ -39,6 +39,11 @@ skillsUI = layer_get_id("SkillsUI");
 
 global.processUnitDeath = false;
 
+global.textboxWidth = 6;
+global.textboxHeight = 2;
+global.textboxPosX = 300;
+global.textboxPosY = 600;
+
 function ProcessDeath(){
 		for (var i = 0; i < ds_list_size(global.units); i++){
 			var inst = global.units [|i];

@@ -56,8 +56,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"text_test","path":"rooms/text_test/text_test.yy",},},
     {"roomId":{"name":"rmOverworld1","path":"rooms/rmOverworld1/rmOverworld1.yy",},},
+    {"roomId":{"name":"text_test","path":"rooms/text_test/text_test.yy",},},
     {"roomId":{"name":"rmBattle","path":"rooms/rmBattle/rmBattle.yy",},},
     {"roomId":{"name":"rmGameOver","path":"rooms/rmGameOver/rmGameOver.yy",},},
   ],
