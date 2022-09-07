@@ -16,7 +16,11 @@
     {"id":{"name":"uiSP","path":"sprites/uiSP/uiSP.yy",},"order":15,},
     {"id":{"name":"RadiansToDegree","path":"scripts/RadiansToDegree/RadiansToDegree.yy",},"order":0,},
     {"id":{"name":"cSkills","path":"objects/cSkills/cSkills.yy",},"order":7,},
+    {"id":{"name":"pOW","path":"objects/pOW/pOW.yy",},"order":10,},
+    {"id":{"name":"oEnemy_overworld","path":"objects/oEnemy_overworld/oEnemy_overworld.yy",},"order":8,},
     {"id":{"name":"oPlayer_overworld","path":"objects/oPlayer_overworld/oPlayer_overworld.yy",},"order":0,},
+    {"id":{"name":"rmOverworld1","path":"rooms/rmOverworld1/rmOverworld1.yy",},"order":1,},
+    {"id":{"name":"owController","path":"objects/owController/owController.yy",},"order":9,},
     {"id":{"name":"cManager","path":"objects/cManager/cManager.yy",},"order":1,},
     {"id":{"name":"Button","path":"scripts/Button/Button.yy",},"order":3,},
     {"id":{"name":"oButtonGeneric","path":"objects/oButtonGeneric/oButtonGeneric.yy",},"order":6,},
@@ -29,7 +33,7 @@
     {"id":{"name":"sPlayerBattle_PlaceholderDefend","path":"sprites/sPlayerBattle_PlaceholderDefend/sPlayerBattle_PlaceholderDefend.yy",},"order":6,},
     {"id":{"name":"cSpawn","path":"objects/cSpawn/cSpawn.yy",},"order":2,},
     {"id":{"name":"pUnit","path":"objects/pUnit/pUnit.yy",},"order":3,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"rmBattle","path":"rooms/rmBattle/rmBattle.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -45,7 +49,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rmOverworld1","path":"rooms/rmOverworld1/rmOverworld1.yy",},},
+    {"roomId":{"name":"rmBattle","path":"rooms/rmBattle/rmBattle.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

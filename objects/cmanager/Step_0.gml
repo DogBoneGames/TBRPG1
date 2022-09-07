@@ -148,7 +148,7 @@ switch(combatPhase){
 	
 	case phase.win:
 	
-		show_message("You Won! Lol! Nice! Haha!");
+		room_goto_previous();
 	
 	break;
 	

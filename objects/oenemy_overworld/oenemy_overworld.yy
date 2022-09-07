@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPlayerOverworld_Placeholder",
-    "path": "sprites/sPlayerOverworld_Placeholder/sPlayerOverworld_Placeholder.yy",
+    "name": "sEnemyOverworld_Base",
+    "path": "sprites/sEnemyOverworld_Base/sEnemyOverworld_Base.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,10 +25,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer_overworld","path":"objects/oPlayer_overworld/oPlayer_overworld.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oEnemy_overworld","path":"objects/oEnemy_overworld/oEnemy_overworld.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -37,7 +35,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPlayer_overworld",
+  "name": "oEnemy_overworld",
   "tags": [],
   "resourceType": "GMObject",
 }

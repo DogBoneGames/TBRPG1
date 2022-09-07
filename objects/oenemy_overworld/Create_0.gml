@@ -1,0 +1,1 @@
+assignedRoom = 1;

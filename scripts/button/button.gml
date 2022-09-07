@@ -80,5 +80,11 @@ function SkillButton(){
 		show_message ("Not enough SP!");
 	}
 }
+
+function DebugWin(){
+	with (cManager){
+		combatPhase = phase.win;
+	}
+}
 	
 	
