@@ -1,5 +1,22 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
+if (btnState == buttonState.active) {
+	if (MainFunc !=noone && position_meeting(MOUSEGUI_X,MOUSEGUI_Y,id))
+	{
+		image_index = 1;
+		if (HoverFunc != noone)
+		{
+			script_execute(HoverFunc);	
+		}
+		if (mouse_check_button(mb_left))
+		{
+			image_index = 2;	
+		}
+		if (mouse_check_button_released(mb_left))
+		{
+			script_execute(MainFunc);
+		}
+	}
+	else
+	{
+		image_index = 0;
+	}
+}

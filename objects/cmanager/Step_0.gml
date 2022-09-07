@@ -20,6 +20,7 @@ switch(combatPhase){
 			}
 			//ds_list_add(global.units, unit);
 		}
+		show_message("Enemies Appeared!");
 		combatPhase = phase.startTurn;
 	break;
 	
@@ -147,14 +148,16 @@ switch(combatPhase){
 	break;
 	
 	case phase.win:
-	
+		
+		show_message("You win!");
 		room_goto_previous();
 	
 	break;
 	
 	case phase.lose:
-	
-		show_message("owned");
+		
+		show_message("You lose!");
+		room_goto(rmGameOver);
 	
 	break;
 }

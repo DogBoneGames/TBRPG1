@@ -1,1 +1,1 @@
-assignedRoom = 1;
+assignedRoom = rmBattle;
