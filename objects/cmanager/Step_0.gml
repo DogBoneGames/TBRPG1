@@ -1,4 +1,3 @@
-
 switch(combatPhase){
 	case phase.init: 
 	//avoid ui bugs
@@ -161,8 +160,20 @@ switch(combatPhase){
 	case phase.win:
 	if !instance_exists(objText){
 		
-		show_message("You win!");
-		room_goto_previous();
+		if winTextSeen = 0{
+		instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
+		{
+			text_last : 0,
+			combatText : "You've won! "+(string(global.expGain))+" EXP awarded"
+		});
+		winTextSeen = 1;
+		}
+		if !instance_exists(objText)
+		{
+		global.playerEXP += global.expGain;
+		global.expGain = 0;
+		room_goto(global.priorRoom);
+		}
 	}
 	
 	break;

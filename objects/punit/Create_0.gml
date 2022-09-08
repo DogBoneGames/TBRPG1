@@ -39,7 +39,7 @@ base[SKILLPOINTS] = 5;
 base[SPEED] = irandom_range(1,10);
 base[ATTACKPOWER] = irandom_range(1,5);
 base[DEFENSEPOWER] = 1;
-base[ACCURACY] = 0.5;
+base[ACCURACY] = 1;
 base[ARMOR] = 1;
 base[WEAPON] = 1;
 
@@ -69,6 +69,7 @@ drawTarget = false;
 defending = false;
 
 team = 0; // 0 = ally, 1 = enemy, 2 = neutral?
+expWorth = 50;
 
 
 

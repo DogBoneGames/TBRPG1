@@ -14,7 +14,6 @@ with (global.selectedUnit){
 	allowInput = false;
 }*/
 //attack targeting
-
 if (global.targeting){
 	if (position_meeting(mouse_x,mouse_y,pUnit)){
 		var unit = instance_position(mouse_x,mouse_y,pUnit);

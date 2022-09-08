@@ -1,7 +1,10 @@
-if combatText{
+text[0] = "";
+if room = rmBattle{
+	if combatText != noone{
 	
-	text[0] = combatText;
+		text[0] = combatText;
 	
+	}
 }
 text_current = 0;
 

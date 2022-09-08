@@ -39,7 +39,10 @@ switch(state){
 			}
 			else{
 				layer_sequence_headpos(unitSequence, deathStart);
-				//ds_list_delete(global.units,ds_list_find_index(global.units,id))
+				ds_list_delete(global.units,ds_list_find_index(global.units,id))
+				if team != 0{
+					global.expGain += expWorth;	
+				}
 				state = DEATH;
 			}
 		}

@@ -1,1 +1,1 @@
-assignedRoom = rmBattle;
+////maybe some day

@@ -32,6 +32,7 @@
     {"id":{"name":"Button","path":"scripts/Button/Button.yy",},"order":3,},
     {"id":{"name":"oButtonGeneric","path":"objects/oButtonGeneric/oButtonGeneric.yy",},"order":6,},
     {"id":{"name":"sPlayerBattle_PlaceholderHurt","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},"order":11,},
+    {"id":{"name":"rmBattle2","path":"rooms/rmBattle2/rmBattle2.yy",},"order":4,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":4,},
     {"id":{"name":"DegreesToRadian","path":"scripts/DegreesToRadian/DegreesToRadian.yy",},"order":1,},
     {"id":{"name":"pButton","path":"objects/pButton/pButton.yy",},"order":5,},
@@ -60,6 +61,7 @@
     {"roomId":{"name":"text_test","path":"rooms/text_test/text_test.yy",},},
     {"roomId":{"name":"rmBattle","path":"rooms/rmBattle/rmBattle.yy",},},
     {"roomId":{"name":"rmGameOver","path":"rooms/rmGameOver/rmGameOver.yy",},},
+    {"roomId":{"name":"rmBattle2","path":"rooms/rmBattle2/rmBattle2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

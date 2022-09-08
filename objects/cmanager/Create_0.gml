@@ -53,3 +53,7 @@ function ProcessDeath(){
 		}
 }
 
+global.expGain = 0;
+winTextSeen = 0;
+
+buttonsVisible = false;

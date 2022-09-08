@@ -38,5 +38,5 @@ Skill = function(_name, _element, _type, _healthChange, _cost, _action) construc
 	action = _action;
 }
 
-global.skill[skill.slash] = new Skill("Slash", skillElement.none, skillType.physical, 2, 1, singleTargetAttack);
+global.skill[skill.slash] = new Skill("Instant Kill", skillElement.none, skillType.physical, 50, 0, singleTargetAttack);
 global.skill[skill.multislash] = new Skill("Cleave", skillElement.none, skillType.physical, 2, 2, multiTargetAttack);

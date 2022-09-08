@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 // Input Setup
-
+if !instance_exists(objText)
+{
 var key_right, key_left, key_down, key_up;
 
 key_right = keyboard_check(ord("D"));
@@ -54,3 +55,6 @@ if moving == true {
 // Keep Object within the map boundries
 x=clamp(x,0,room_width-sprite_width);
 y=clamp(y,0,room_height-sprite_height);
+}
+
+global.priorRoom = room;
