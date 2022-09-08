@@ -1,8 +1,8 @@
 //stat variables enumerated for different skill types
 enum skillStat{
 	name,
-	element, //set with skillElement array
-	type, //set with skillType array
+	element, //set with skillElement struct
+	type, //set with skillType struct
 	targets,
 	healthChange,
 	cost,
@@ -14,14 +14,14 @@ completely immune to magic or completely immune to physical*/
 enum skillType{
 	physical,
 	magic,
+	diplomacy
 }
 /*more classical element types. will add or remove as i go*/
 enum skillElement{
 	none,
-	fire,
-	water,
-	earth,
-	air,
+	charm,
+	intimidate,
+	persuade
 }
 //where every single skill in the game will be stored.
 enum skill{
