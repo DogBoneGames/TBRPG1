@@ -1,5 +1,5 @@
 text[0] = "";
-if room = rmBattle{
+if instance_exists(cManager){
 	if combatText != noone{
 	
 		text[0] = combatText;
