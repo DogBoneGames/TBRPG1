@@ -4,8 +4,6 @@ draw_set_font(fnt_base);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
-image_xscale = global.textboxWidth;
-image_yscale = global.textboxHeight;
 
 var _len = string_length(text[text_current]);
 if (char_current < _len){

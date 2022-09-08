@@ -5,6 +5,8 @@ if (event_data[? "event_type"] == "sequence event"){
 		case "AttackSent":
 		instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
 		{
+			image_xscale : 6,
+			image_yscale : 2,
 			text_last : 0,
 			combatText : (string(global.selectedUnit))+" attacks!"
 		});
@@ -17,6 +19,8 @@ if (event_data[? "event_type"] == "sequence event"){
 		case "UnitDefend":
 		instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
 		{
+			image_xscale : 6,
+			image_yscale : 2,
 			text_last : 0,
 			combatText : (string(global.selectedUnit))+" defends!"
 		});
@@ -33,6 +37,8 @@ if (event_data[? "event_type"] == "sequence event"){
 		case "UnitMiss":
 		instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
 		{
+			image_xscale : 6,
+			image_yscale : 2,
 			text_last : 0,
 			combatText : (string(global.selectedUnit))+" missed!"
 		});
@@ -42,6 +48,8 @@ if (event_data[? "event_type"] == "sequence event"){
 		case "SkillSent":
 				instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
 		{
+			image_xscale : 6,
+			image_yscale : 2,
 			text_last : 0,
 			combatText : (string(global.selectedUnit)+" uses "+string(global.selectedUnit.selectedSkill.name))
 		});

@@ -163,6 +163,8 @@ switch(combatPhase){
 		if winTextSeen = 0{
 		instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,
 		{
+			image_xscale : 6,
+			image_yscale : 2,
 			text_last : 0,
 			combatText : "You've won! "+(string(global.expGain))+" EXP awarded"
 		});
