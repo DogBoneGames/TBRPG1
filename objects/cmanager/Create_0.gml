@@ -10,7 +10,7 @@ enum phase{
 	win,
 	lose
 }
-
+lastphase = noone;
 combatPhase = phase.init;
 unitsFinished = 0;
 selectedFinished = false;

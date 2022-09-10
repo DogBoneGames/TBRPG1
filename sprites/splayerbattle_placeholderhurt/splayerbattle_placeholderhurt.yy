@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sPlayerBattle_PlaceholderHurt",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a31e8a83-c685-4d19-b697-5ff323cbbd9b","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a31e8a83-c685-4d19-b697-5ff323cbbd9b","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},"LayerId":{"name":"e7b374e5-8869-4f65-b201-85142ec066d0","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sPlayerBattle_PlaceholderHurt","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},"resourceVersion":"1.0","name":"a31e8a83-c685-4d19-b697-5ff323cbbd9b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a31e8a83-c685-4d19-b697-5ff323cbbd9b",},
   ],
   "sequence": {
-    "spriteId": {"name":"sPlayerBattle_PlaceholderHurt","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sPlayerBattle_PlaceholderHurt",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7ed1c16a-1275-4916-99d6-8a0a6fa0a8f5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a31e8a83-c685-4d19-b697-5ff323cbbd9b","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"7ed1c16a-1275-4916-99d6-8a0a6fa0a8f5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a31e8a83-c685-4d19-b697-5ff323cbbd9b","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sPlayerBattle_PlaceholderHurt","path":"sprites/sPlayerBattle_PlaceholderHurt/sPlayerBattle_PlaceholderHurt.yy",},
-    "resourceVersion": "1.4",
-    "name": "sPlayerBattle_PlaceholderHurt",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e7b374e5-8869-4f65-b201-85142ec066d0","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e7b374e5-8869-4f65-b201-85142ec066d0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Placeholders",
+    "path": "folders/Sprites/Placeholders.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sPlayerBattle_PlaceholderHurt",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
