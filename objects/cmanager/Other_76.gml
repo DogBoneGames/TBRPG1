@@ -8,7 +8,7 @@ if (event_data[? "event_type"] == "sequence event"){
 			image_xscale : 6,
 			image_yscale : 2,
 			text_last : 0,
-			combatText : (string(global.selectedUnit))+" attacks!"
+			combatText : (string(global.selectedUnit.charName))+" attacks!"
 		});
 		selectedFinished = true;
 		if (!global.selectedUnit.attackWillHit){
@@ -22,11 +22,11 @@ if (event_data[? "event_type"] == "sequence event"){
 			image_xscale : 6,
 			image_yscale : 2,
 			text_last : 0,
-			combatText : (string(global.selectedUnit))+" defends!"
+			combatText : (string(global.selectedUnit.charName))+" defends!"
 		});
-			global.selectedUnit.turnFinished = true;
 			selectedFinished = true;
 			processFinished = true;
+			global.selectedUnit.turnFinished = true;
 		break;
 		
 		//combat processing finish check
@@ -40,7 +40,7 @@ if (event_data[? "event_type"] == "sequence event"){
 			image_xscale : 6,
 			image_yscale : 2,
 			text_last : 0,
-			combatText : (string(global.selectedUnit))+" missed!"
+			combatText : (string(global.selectedUnit.charName))+" missed!"
 		});
 			processFinished = true;
 		break;
@@ -51,7 +51,7 @@ if (event_data[? "event_type"] == "sequence event"){
 			image_xscale : 6,
 			image_yscale : 2,
 			text_last : 0,
-			combatText : (string(global.selectedUnit)+" uses "+string(global.selectedUnit.selectedSkill.name))
+			combatText : (string(global.selectedUnit.charName)+" uses "+string(global.selectedUnit.selectedSkill.name))
 		});
 			selectedFinished = true;
 			skillSent = false;

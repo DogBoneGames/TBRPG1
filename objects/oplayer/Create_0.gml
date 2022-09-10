@@ -1,5 +1,6 @@
 event_inherited();
 //handles animation frames, set correctly or game will break!
+
 unitSequence = layer_sequence_create("Sequences",x,y,sPlayer);
 
 idleStart = 0;
@@ -29,4 +30,15 @@ skillEnd = 348;
 learnedSkill[0] = global.skill[skill.slash];
 learnedSkill[1] = global.skill[skill.multislash];
 
+//stats & other cool variables
+
 charName = "Hero";
+
+base[@ HEALTH] = global.HeroMaxHP + global.HeroHPLevelBonus[global.heroLevel];
+if global.heroLevelUpHeal {
+	current[@ HEALTH] = base[@ HEALTH];
+	global.heroLevelUpHeal = false;
+}
+else {
+	current[@ HEALTH] = global.HeroCurrentHP;	
+}

@@ -1,4 +1,5 @@
 //stat variables enumerated for different skill types
+
 enum skillStat{
 	name,
 	element, //set with skillElement struct
@@ -8,14 +9,17 @@ enum skillStat{
 	cost,
 	action //which function to run for this skill
 }
+
 /*enum for a binary skill type
 kind of like a broader "element type," some enemies might be 
 completely immune to magic or completely immune to physical*/
+
 enum skillType{
 	physical,
 	magic,
 	diplomacy
 }
+
 /*more classical element types. will add or remove as i go*/
 enum skillElement{
 	none,
@@ -23,6 +27,7 @@ enum skillElement{
 	intimidate,
 	persuade
 }
+
 //where every single skill in the game will be stored.
 enum skill{
 	slash,

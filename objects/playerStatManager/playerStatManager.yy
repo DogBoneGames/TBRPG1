@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEnemy_Generic",
+  "name": "playerStatManager",
   "spriteId": null,
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
-  "spriteMaskId": {
-    "name": "vTargeting",
-    "path": "sprites/vTargeting/vTargeting.yy",
-  },
-  "persistent": false,
-  "parentObjectId": {
-    "name": "pUnit",
-    "path": "objects/pUnit/pUnit.yy",
-  },
+  "spriteMaskId": null,
+  "persistent": true,
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -29,12 +23,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Combat Units",
-    "path": "folders/Objects/Combat Units.yy",
+    "name": "General Management",
+    "path": "folders/Objects/General Management.yy",
   },
 }

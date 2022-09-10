@@ -42,9 +42,11 @@ function UnitAttack(){
 }
 
 function UnitDefend(){
+	if global.selectedUnit.defending = false{
 	with(global.selectedUnit){
 		defending = true;	
 	}
+}
 }
 
 function UnitSkill(){

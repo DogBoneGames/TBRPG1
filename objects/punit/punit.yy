@@ -36,7 +36,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Combat Units",
+    "path": "folders/Objects/Combat Units.yy",
   },
 }

@@ -28,7 +28,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Combat Management",
+    "path": "folders/Objects/Combat Management.yy",
   },
 }
