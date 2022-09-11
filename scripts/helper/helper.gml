@@ -42,9 +42,11 @@ function UnitAttack(){
 }
 
 function UnitDefend(){
+	if global.selectedUnit.defending = false{
 	with(global.selectedUnit){
 		defending = true;	
 	}
+}
 }
 
 function UnitSkill(){
@@ -90,8 +92,4 @@ function AIChoose(){
 	}
 	ds_list_add(global.selectedTargets, _unit);
 	cManager.aiDone = true;
-}
-
-function spawnText(){
-	
 }

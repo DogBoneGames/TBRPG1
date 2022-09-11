@@ -10,7 +10,7 @@ enum phase{
 	win,
 	lose
 }
-
+lastphase = noone;
 combatPhase = phase.init;
 unitsFinished = 0;
 selectedFinished = false;
@@ -55,5 +55,6 @@ function ProcessDeath(){
 
 global.expGain = 0;
 winTextSeen = 0;
+fanfareSeen = false;
 
 buttonsVisible = false;

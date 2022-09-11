@@ -15,21 +15,24 @@ switch(combatPhase){
 				var unit = instance_create_depth(spawner.x, spawner.y, 0, oPlayer);
 				unit.team = 0; //ally team
 			}else{ //if spawns on right side of screen
-				var unit = instance_create_depth(spawner.x, spawner.y, 0, oPlayer);
+				var unit = instance_create_depth(spawner.x, spawner.y, 0, oEnemy_Generic);
 				unit.team = 1; // enemy team
 			}
-			//ds_list_add(global.units, unit);
+			ds_list_add(global.units, unit);
 		}
 		show_message("Enemies Appeared!");
+		lastphase = phase.init;
 		combatPhase = phase.startTurn;
 	break;
 	
 	case phase.startTurn:
 	//round up all units in battle
 		if !instance_exists(objText){
+			if lastphase != phase.init{
 			for (var i = 0; i < instance_number(pUnit); i++){
 				var _inst = instance_find(pUnit, i);
 				ds_list_add(global.units, _inst);
+			}
 			}
 	
 	//check which unit's turn it is, which units exist, etc
@@ -61,6 +64,7 @@ switch(combatPhase){
 				allowInput = true;
 				event_user(1);
 			}
+			lastphase = phase.startTurn;
 			combatPhase = phase.wait;
 		}
 	break;
@@ -76,6 +80,7 @@ switch(combatPhase){
 		{
 			global.selectedUnit.selected = false;
 			unitsFinished ++;
+			lastphase = phase.wait;
 			combatPhase = phase.process;
 			
 			event_user(0);
@@ -101,6 +106,7 @@ switch(combatPhase){
 			}
 			processFinished = true;
 			if (processFinished){
+				lastphase = phase.process
 				combatPhase = phase.checkFinish;
 			}
 		}
@@ -117,7 +123,7 @@ switch(combatPhase){
 				}
 				else enemies++;
 			}
-			
+			lastphase = phase.checkFinish
 			if (allies <= 0){
 				combatPhase = phase.lose;
 			}
@@ -170,14 +176,39 @@ switch(combatPhase){
 		});
 		winTextSeen = 1;
 		}
-		if !instance_exists(objText)
+		if winTextSeen = 1
 		{
 		global.playerEXP += global.expGain;
 		global.expGain = 0;
-		room_goto(global.priorRoom);
+		if global.heroLevelUp = true {
+			if fanfareSeen = false{
+				instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,{
+				image_xscale : 6,
+				image_yscale : 2,
+				text_last : 0,
+				combatText : "LEVEL UP! Congratulations, you are now Level "+(string(global.heroLevel))
+				});
+				fanfareSeen = true;
+			}
+			if !instance_exists(objText)
+			{
+
+				if fanfareSeen = true
+				{
+					global.heroLevelUp = false;
+					global.playerEXP = 0;
+					fanfareSeen = false;
+					room_goto(global.priorRoom);
+				}
+			}
+		}
+		if global.heroLevelUp = false {
+			if !instance_exists(objText){
+				room_goto(global.priorRoom);
+			}
 		}
 	}
-	
+	}
 	break;
 	
 	case phase.lose:

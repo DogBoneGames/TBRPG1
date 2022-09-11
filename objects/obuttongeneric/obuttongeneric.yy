@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oButtonGeneric",
   "spriteId": {
     "name": "vButton",
     "path": "sprites/vButton/vButton.yy",
@@ -28,11 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Buttons",
+    "path": "folders/Objects/Buttons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oButtonGeneric",
-  "tags": [],
-  "resourceType": "GMObject",
 }

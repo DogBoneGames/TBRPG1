@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "pOW",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -22,11 +25,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Overworld Management",
+    "path": "folders/Objects/Overworld Management.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "pOW",
-  "tags": [],
-  "resourceType": "GMObject",
 }
