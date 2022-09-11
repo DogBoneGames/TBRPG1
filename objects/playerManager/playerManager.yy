@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "playerStatManager",
+  "name": "playerManager",
   "spriteId": null,
   "solid": false,
   "visible": false,

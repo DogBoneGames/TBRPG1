@@ -55,5 +55,6 @@ function ProcessDeath(){
 
 global.expGain = 0;
 winTextSeen = 0;
+fanfareSeen = false;
 
 buttonsVisible = false;

@@ -38,7 +38,7 @@
     {"id":{"name":"owController","path":"objects/owController/owController.yy",},"order":1,},
     {"id":{"name":"heroBattle_defend","path":"sprites/heroBattle_defend/heroBattle_defend.yy",},"order":7,},
     {"id":{"name":"debugButton","path":"objects/debugButton/debugButton.yy",},"order":0,},
-    {"id":{"name":"playerStatManager","path":"objects/playerStatManager/playerStatManager.yy",},"order":0,},
+    {"id":{"name":"playerManager","path":"objects/playerManager/playerManager.yy",},"order":0,},
     {"id":{"name":"cManager","path":"objects/cManager/cManager.yy",},"order":0,},
     {"id":{"name":"oEnemy_Generic","path":"objects/oEnemy_Generic/oEnemy_Generic.yy",},"order":1,},
     {"id":{"name":"heroBattle_charm","path":"sprites/heroBattle_charm/heroBattle_charm.yy",},"order":3,},

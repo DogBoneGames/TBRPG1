@@ -176,14 +176,39 @@ switch(combatPhase){
 		});
 		winTextSeen = 1;
 		}
-		if !instance_exists(objText)
+		if winTextSeen = 1
 		{
 		global.playerEXP += global.expGain;
 		global.expGain = 0;
-		room_goto(global.priorRoom);
+		if global.heroLevelUp = true {
+			if fanfareSeen = false{
+				instance_create_depth(global.textboxPosX, global.textboxPosY,-100,objText,{
+				image_xscale : 6,
+				image_yscale : 2,
+				text_last : 0,
+				combatText : "LEVEL UP! Congratulations, you are now Level "+(string(global.heroLevel))
+				});
+				fanfareSeen = true;
+			}
+			if !instance_exists(objText)
+			{
+
+				if fanfareSeen = true
+				{
+					global.heroLevelUp = false;
+					global.playerEXP = 0;
+					fanfareSeen = false;
+					room_goto(global.priorRoom);
+				}
+			}
+		}
+		if global.heroLevelUp = false {
+			if !instance_exists(objText){
+				room_goto(global.priorRoom);
+			}
 		}
 	}
-	
+	}
 	break;
 	
 	case phase.lose:

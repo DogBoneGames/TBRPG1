@@ -34,11 +34,6 @@ learnedSkill[1] = global.skill[skill.multislash];
 
 charName = "Hero";
 
-base[@ HEALTH] = global.HeroMaxHP + global.HeroHPLevelBonus[global.heroLevel];
-if global.heroLevelUpHeal {
-	current[@ HEALTH] = base[@ HEALTH];
-	global.heroLevelUpHeal = false;
-}
-else {
-	current[@ HEALTH] = global.HeroCurrentHP;	
-}
+base[@ HEALTH] = global.HeroMaxHP;
+current[@ HEALTH] = global.HeroCurrentHP;	
+
