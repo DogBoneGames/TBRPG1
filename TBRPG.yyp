@@ -7,6 +7,7 @@
     {"id":{"name":"Helper","path":"scripts/Helper/Helper.yy",},"order":2,},
     {"id":{"name":"vButton","path":"sprites/vButton/vButton.yy",},"order":3,},
     {"id":{"name":"sPlayerBattle_Placeholder","path":"sprites/sPlayerBattle_Placeholder/sPlayerBattle_Placeholder.yy",},"order":2,},
+    {"id":{"name":"DamageText","path":"objects/DamageText/DamageText.yy",},"order":3,},
     {"id":{"name":"sEnemyOverworld_Base","path":"sprites/sEnemyOverworld_Base/sEnemyOverworld_Base.yy",},"order":1,},
     {"id":{"name":"sPlayer_placeholder","path":"sequences/sPlayer_placeholder/sPlayer_placeholder.yy",},"order":0,},
     {"id":{"name":"uiHP","path":"sprites/uiHP/uiHP.yy",},"order":1,},

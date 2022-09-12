@@ -96,3 +96,5 @@ function DamageUnit(amount){
 		current[@HEALTH] -= damage;	
 	}
 }
+displayDamageText = false;
+damageTextValue = false;

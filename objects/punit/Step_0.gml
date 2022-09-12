@@ -32,6 +32,7 @@ switch(state){
 			DamageUnit(incomingDamage);
 			if (current[@HEALTH] > 0)
 			{
+				event_user(4);
 				cManager.processFinished = true;
 				layer_sequence_headpos(unitSequence, idleStart);
 				incomingDamage = 0;
