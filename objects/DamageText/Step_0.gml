@@ -1,5 +1,6 @@
 if (fade_out) {
     alpha -= 0.05;
+	y -= 1;
 }
 
 if (alpha <= 0) {

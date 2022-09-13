@@ -1,1 +1,1 @@
-instance_destroy(self);
+fade_out = true;

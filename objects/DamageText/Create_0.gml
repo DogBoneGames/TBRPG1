@@ -1,3 +1,3 @@
 alpha = 1;
 fade_out = false;
-alarm[0] = 120; // Time in frames
+alarm[0] = 30; // Time in frames

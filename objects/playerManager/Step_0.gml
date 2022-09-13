@@ -7,9 +7,9 @@ global.HeroCurrentHP = oPlayer.current[@HEALTH];
 
 if global.playerEXP >= global.HeroLevelThreshold{
 	global.heroLevel++;
+	global.heroLevelUpHeal = true;
 	global.heroLevelUp = true;
 	global.HeroMaxHP = 10+global.HeroHPLevelBonus[global.heroLevel];
-	global.heroLevelUpHeal = true;
 }
 
 if global.heroLevelUpHeal = true{
