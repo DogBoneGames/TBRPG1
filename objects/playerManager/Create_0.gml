@@ -19,3 +19,7 @@ global.heroLevel = 1;
 global.HeroMaxHP = 10+global.HeroHPLevelBonus[global.heroLevel];
 global.HeroCurrentHP = global.HeroMaxHP;
 global.heroLevelUpHeal = false;
+global.HeroMaxSP = 5+global.heroLevel;
+global.HeroAgility = 5+global.heroLevel;
+global.HeroStrength = 3+global.heroLevel;
+global.HeroDefense = 1*global.heroLevel;

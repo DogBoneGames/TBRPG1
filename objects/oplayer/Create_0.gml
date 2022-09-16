@@ -36,4 +36,12 @@ charName = "Hero";
 
 base[@ HEALTH] = global.HeroMaxHP;
 current[@ HEALTH] = global.HeroCurrentHP;	
+base[@ SKILLPOINTS] = global.HeroMaxSP;
+current[@ SKILLPOINTS] = base[@ SKILLPOINTS];	
+base[@ SPEED] = global.HeroAgility;
+base[@ ATTACKPOWER] = global.HeroStrength;
+base[@ DEFENSEPOWER] = global.HeroDefense;
+current[@ SPEED] = base[@ SPEED];
+current[@ ATTACKPOWER] = base[@ ATTACKPOWER];
+current[@ DEFENSEPOWER] = base [@ DEFENSEPOWER];
 
