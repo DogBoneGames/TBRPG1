@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEnemy_overworld",
+  "name": "pEnemy_overworld",
   "spriteId": {
     "name": "sEnemyOverworld_Base",
     "path": "sprites/sEnemyOverworld_Base/sEnemyOverworld_Base.yy",
