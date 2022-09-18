@@ -12,10 +12,10 @@ switch(combatPhase){
 		for (var i = 0; i < instance_number(cSpawn); i++){
 			var spawner = instance_find(cSpawn, i);
 			if (spawner.x < room_width/2){ //if spawns on left side of screen
-				var unit = instance_create_depth(spawner.x, spawner.y, 0, oPlayer);
+				var unit = instance_create_depth(spawner.x, spawner.y, 0, spawner.partySpawn);
 				unit.team = 0; //ally team
 			}else{ //if spawns on right side of screen
-				var unit = instance_create_depth(spawner.x, spawner.y, 0, oEnemy_Generic);
+				var unit = instance_create_depth(spawner.x, spawner.y, 0, spawner.enemySpawn);
 				unit.team = 1; // enemy team
 			}
 			ds_list_add(global.units, unit);
