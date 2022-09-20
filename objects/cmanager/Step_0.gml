@@ -1,13 +1,5 @@
 switch(combatPhase){
 	case phase.init: 
-	//avoid ui bugs
-		layer_set_visible(targetUI, false);
-		instance_deactivate_layer(targetUI);
-		layer_set_visible(baseUI, false);
-		
-		layer_set_visible(skillsUI, false);
-		instance_deactivate_layer(skillsUI);
-	
 	//create all units for combat, set teams
 		for (var i = 0; i < instance_number(cSpawn); i++){
 			var spawner = instance_find(cSpawn, i);
@@ -71,6 +63,21 @@ switch(combatPhase){
 	
 	case phase.wait:
 	if !instance_exists(objText){
+		
+		if (global.selectedUnit.team = 0) && (global.targeting = false)
+		{
+			UI_Menu
+			(
+				200, 
+				250,
+				[
+					["Attack", AttackMenuOption],
+					["Violence Against Women and Minorities", -1],
+					["I just want to play video games", -1]
+				],
+				"This is a test menu!"
+);
+		}
 	
 		if (global.selectedUnit.team > 0 && !aiDone){
 			AIChoose();	
@@ -83,11 +90,6 @@ switch(combatPhase){
 			lastphase = phase.wait;
 			combatPhase = phase.process;
 			
-			event_user(0);
-			layer_set_visible(targetUI, false);
-			instance_deactivate_layer(targetUI);
-			layer_set_visible(baseUI, false);
-			instance_deactivate_layer(targetUI);
 		}
 	}
 	break;
