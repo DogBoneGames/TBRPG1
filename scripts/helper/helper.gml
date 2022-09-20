@@ -42,6 +42,7 @@ function UnitAttack(){
 }
 
 function UnitDefend(){
+	instance_destroy(oMenu);
 	if global.selectedUnit.defending = false{
 	with(global.selectedUnit){
 		defending = true;	

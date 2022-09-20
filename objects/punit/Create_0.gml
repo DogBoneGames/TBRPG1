@@ -98,3 +98,6 @@ function DamageUnit(amount){
 }
 displayDamageText = false;
 damageTextValue = false;
+skillCount = 0;
+_hp = current[@ HEALTH]/base[@ HEALTH];
+_sp = current[@ SKILLPOINTS]/base[@ SKILLPOINTS];

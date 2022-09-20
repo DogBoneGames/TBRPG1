@@ -1,3 +1,5 @@
+_hp = current[@ HEALTH]/base[@ HEALTH];
+_sp = current[@ SKILLPOINTS]/base[@ SKILLPOINTS];
 switch(state){
 	case IDLE:
 	if(!defending){

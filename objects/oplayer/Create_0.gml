@@ -28,7 +28,10 @@ skillStart = 272;
 skillEnd = 348;
 
 learnedSkill[0] = global.skill[skill.slash];
+skillCount += 1;
 learnedSkill[1] = global.skill[skill.multislash];
+skillCount += 1;
+
 
 //stats & other cool variables
 

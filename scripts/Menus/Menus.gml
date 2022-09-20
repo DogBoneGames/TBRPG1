@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function UI_Menu(_x,_y,_options,_description = -1){
 
-	with (instance_create_depth(_x,_y,-899,oMenu))
+	with (instance_create_depth(_x,_y,-5000,oMenu))
 	{
 		options = _options;
 		description = _description;
@@ -43,7 +43,48 @@ function AttackMenuOption(){
 	}
 }
 
-function SkillsMenuOption(){
+
+function SkillMenuOption(){
+	instance_destroy(oMenu);
+	UI_Menu
+	(
+		300,
+		600,
+		[
+			[string(global.selectedUnit.learnedSkill[0].name), SkillsSend],
+			[string(global.selectedUnit.learnedSkill[1].name), SkillsSend]
+		],
+		
+		"Choose a Skill"
 	
 	
+	);
+}
+
+function SkillsSend(){
+	instance_destroy(oMenu);
+	show_debug_message("Skill buttons working");
+	var _cost = global.selectedUnit.learnedSkill[global.chosenOption].cost;
+	var _sp = global.selectedUnit.current[@ SKILLPOINTS];
+	if (_sp >= _cost){
+		show_debug_message("skill available");
+		global.skillTargeting = true;
+		global.selectedUnit.selectedSkill = global.selectedUnit.learnedSkill[global.chosenOption];	
+		for (var i = 0; i < ds_list_size(global.units); i++){
+			show_debug_message("for loop working");
+			var _inst = global.units[| i];
+			if (_inst.team!= global.selectedUnit.team){
+				ds_list_add(global.targets, _inst);
+			}
+		}
+		}else {
+		show_message ("Not enough SP!");
+	}
+}
+
+function DefendMenuOption(){
+		with(global.selectedUnit){
+		state = TODEFEND;
+		layer_sequence_headpos(unitSequence, toDefendStart);
+		}	
 }

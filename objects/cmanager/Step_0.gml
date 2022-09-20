@@ -64,16 +64,16 @@ switch(combatPhase){
 	case phase.wait:
 	if !instance_exists(objText){
 		
-		if (global.selectedUnit.team = 0) && (global.targeting = false)
+		if (global.selectedUnit.team = 0) && !global.targeting && !global.skillTargeting && !global.selectedUnit.defending && !instance_exists(oMenu)
 		{
 			UI_Menu
 			(
-				200, 
-				250,
+				300, 
+				600,
 				[
 					["Attack", AttackMenuOption],
-					["Violence Against Women and Minorities", -1],
-					["I just want to play video games", -1]
+					["Skills", SkillMenuOption],
+					["Defend", DefendMenuOption]
 				],
 				"This is a test menu!"
 );

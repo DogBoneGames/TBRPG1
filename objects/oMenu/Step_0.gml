@@ -30,3 +30,4 @@ if ((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed
 
 mxPrev = mouse_x;
 myPrev = mouse_y;
+global.chosenOption = hover;
