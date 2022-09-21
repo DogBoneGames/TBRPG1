@@ -17,6 +17,8 @@ selectedFinished = false;
 processFinished = false;
 allowInput = false;
 
+global.critValue = 1;
+
 allies = 0;
 enemies = 0;
 aiDone = false;

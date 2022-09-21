@@ -33,9 +33,10 @@ function UnitAttack(){
 				defending = false;	
 			}
 			
-			incomingDamage = unit.current[@ ATTACKPOWER]+ current[@ WEAPON];
+			incomingDamage = (unit.current[@ ATTACKPOWER]+ current[@ WEAPON])*global.critValue;
 			state = HURT;
 			layer_sequence_headpos(unitSequence, hurtStart);
+			global.critValue = 1;
 		}
 	}
 	}
@@ -93,4 +94,10 @@ function AIChoose(){
 	}
 	ds_list_add(global.selectedTargets, _unit);
 	cManager.aiDone = true;
+}
+
+function attackQTE(){
+	
+		instance_create_depth(600,200,-250,oAttackQTE);
+		
 }
