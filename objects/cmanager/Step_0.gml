@@ -75,7 +75,7 @@ switch(combatPhase){
 					["Skills", SkillMenuOption],
 					["Defend", DefendMenuOption]
 				],
-				"This is a test menu!"
+				"What should "+global.selectedUnit.charName+" do?"
 );
 		}
 	
