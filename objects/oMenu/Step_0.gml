@@ -18,7 +18,7 @@ hover += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 if (hover > optionsCount-1) hover = 0;
 if (hover < 0) hover = optionsCount-1;
 
-if ((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(vk_enter))
+if ((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_released(ord("Z"))) && inMenu = true
 {
 	if (array_length(options[hover])) == 2
 	{

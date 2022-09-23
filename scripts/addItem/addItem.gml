@@ -7,6 +7,7 @@ function addItem(){
 /// @argument3 String Item_Description
 /// @argument4 Sprite Item_Sprite
 /// @argument5 Script Item_Script
+/// @argument5 Bool Item_Consumable
 
 gridToAddTo = argument0;
 newItemName = argument1;
@@ -14,6 +15,7 @@ newItemAmount = argument2;
 newItemDescription = argument3;
 newItemSprite = argument4;
 newItemScript = argument5;
+newItemConsumable = argument6;
 
 //case 1 - item already in inventory
 for (i = 0; i < ds_grid_height(gridToAddTo); ++i){
@@ -34,5 +36,6 @@ ds_grid_set (gridToAddTo, 1, newItemSpot, newItemAmount);
 ds_grid_set (gridToAddTo, 2, newItemSpot, newItemDescription);
 ds_grid_set (gridToAddTo, 3, newItemSpot, newItemSprite);
 ds_grid_set (gridToAddTo, 4, newItemSpot, newItemScript);
+ds_grid_set(gridToAddTo, 5, newItemSpot, newItemConsumable);
 
 }

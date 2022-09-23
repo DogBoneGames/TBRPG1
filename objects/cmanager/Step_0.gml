@@ -68,8 +68,8 @@ switch(combatPhase){
 		{
 			UI_Menu
 			(
-				300, 
-				600,
+				50, 
+				400,
 				[
 					["Attack", AttackMenuOption],
 					["Skills", SkillMenuOption],

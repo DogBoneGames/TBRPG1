@@ -25,12 +25,12 @@ for(i = 0; i < inventoryEndAt; ++i) {
 }
 draw_rectangle(bbox_left+textBorder, itemTopStart + ((itemSelected - scrolledAmount) * 32), bbox_right - textBorder, itemTopStart + ((itemSelected - scrolledAmount) * 32) + 30, true); 
 
-draw_sprite(inventoryGUI, 0, bbox_right + sprite_get_xoffset(inventoryGUI), room_height - sprite_get_yoffset(inventoryGUI));
+draw_sprite(invDescBox, 0, bbox_right + sprite_get_xoffset(invDescBox) - 1, room_height - sprite_get_yoffset(invDescBox));
 
 if(isEmpty)
-	draw_text_ext(bbox_right + 50, room_height - sprite_get_yoffset(inventoryGUI) - 100, emptyMessage, 32, sprite_get_width(inventoryGUI) - textBorder);
+	draw_text_ext(bbox_right + 50, room_height - sprite_get_yoffset(invDescBox) - 100, emptyMessage, 32, sprite_get_width(invDescBox) - textBorder);
 else
-	draw_text_ext(bbox_right + 15, room_height - sprite_get_yoffset(inventoryGUI) - 100, ds_grid_get(myItems, 2, itemSelected), 32, sprite_get_width(inventoryGUI) - textBorder);
+	draw_text_ext(bbox_right + 15, room_height - sprite_get_yoffset(invDescBox) - 100, ds_grid_get(myItems, 2, itemSelected), 32, sprite_get_width(invDescBox) - textBorder);
 	
 if(ds_grid_height(myItems) > floor((sprite_height - (textBorder * 3)) / 32)) {
 	draw_sprite(scrollBar, 0, bbox_right-20, 10 + bbox_top + itemSelected * (sprite_height - textBorder) / ds_grid_height(myItems));	

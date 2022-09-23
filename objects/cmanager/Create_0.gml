@@ -43,8 +43,8 @@ global.processUnitDeath = false;
 
 global.textboxWidth = 6;
 global.textboxHeight = 2;
-global.textboxPosX = 300;
-global.textboxPosY = 600;
+global.textboxPosX = 50;
+global.textboxPosY = 400;
 
 function ProcessDeath(){
 		for (var i = 0; i < ds_list_size(global.units); i++){
