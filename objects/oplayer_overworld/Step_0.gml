@@ -2,14 +2,14 @@
 // You can write your code in this editor
 
 // Input Setup
-if !instance_exists(objText)
+if !instance_exists(objText) && !instance_exists(oInventoryGUI)
 {
 var key_right, key_left, key_down, key_up;
 
-key_right = keyboard_check(ord("D"));
-key_left = keyboard_check(ord("A"));
-key_down = keyboard_check(ord("S"));
-key_up = keyboard_check(ord("W"));
+key_right = keyboard_check(vk_right);
+key_left = keyboard_check(vk_left);
+key_down = keyboard_check(vk_down);
+key_up = keyboard_check(vk_up);
 
 // Object Position and Direction
 var move_direction, dir, xpos, ypos, hspd, vspd;

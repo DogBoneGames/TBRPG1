@@ -101,3 +101,14 @@ function attackQTE(){
 		instance_create_depth(600,200,-250,oAttackQTE);
 		
 }
+
+function HealthPotionSmall(){
+	
+	if global.HeroCurrentHP + round(global.HeroMaxHP*0.25) < global.HeroMaxHP{
+		global.HeroCurrentHP += round(global.HeroMaxHP*0.25);
+	}
+	else if global.HeroCurrentHP + round(global.HeroMaxHP*0.25) >= global.HeroMaxHP{
+		global.HeroCurrentHP = global.HeroMaxHP;	
+	}
+	
+}
