@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oPlayer_overworld",
   "spriteId": {
-    "name": "sPlayerOverworld_Placeholder",
-    "path": "sprites/sPlayerOverworld_Placeholder/sPlayerOverworld_Placeholder.yy",
+    "name": "owHero",
+    "path": "sprites/owHero/owHero.yy",
   },
   "solid": false,
   "visible": true,

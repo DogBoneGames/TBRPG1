@@ -1,4 +1,4 @@
-draw_text(0,0,"Debug: Current EXP: "+(string(global.playerEXP))+" Current Level: "+(string(global.heroLevel))+ " Max HP: "+(string(global.HeroMaxHP)));
+/*draw_text(0,0,"Debug: Current EXP: "+(string(global.playerEXP))+" Current Level: "+(string(global.heroLevel))+ " Max HP: "+(string(global.HeroMaxHP)));
 draw_text(0,32,"Current HP: "+(string(global.HeroCurrentHP)));
 draw_text(0,64,"Attack Power: "+(string(global.HeroStrength)));
 draw_text(0,96,"Defense: "+(string(global.HeroDefense)));

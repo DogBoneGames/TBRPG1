@@ -2,10 +2,6 @@
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
   "name": "SpatterTiles",
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "spriteId": {
     "name": "spr_Spatter",
     "path": "sprites/spr_Spatter/spr_Spatter.yy",
@@ -16,9 +12,13 @@
   "tileyoff": 0,
   "tilehsep": 0,
   "tilevsep": 0,
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "out_tilehborder": 2,
   "out_tilevborder": 2,
-  "spriteNoExport": true,
   "out_columns": 12,
   "tile_count": 144,
   "autoTileSets": [
